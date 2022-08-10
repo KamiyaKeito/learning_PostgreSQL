@@ -1,0 +1,32 @@
+/* 文字列
+PostgreSQLみおける文字列型について
+
+◆n 文字の固定長文字列型で、短い場合はスペースで埋められる。
+char(n)
+character(n)
+
+◆n 文字の可変長文字列。
+varchar(n)
+character varying(n)
+
+◆長さ制限がない文字列。
+text
+*/
+
+//特殊な用途の文字列型
+◆char(1) とは異なる。単一文字のデータ型。
+char
+
+◆テーブル名、フィールド名などに利用される 64バイトのデータ型。
+name
+
+//ビット文字列型
+◆厳格に n ビットの “0”, “1” のビット文字列を定義する。
+bit(n)
+
+◆可変長の n ビット文字列を定義する。
+varbit(n)
+bit varying(n)
+
+//参照
+https://tech-lab.sios.jp/archives/8640
